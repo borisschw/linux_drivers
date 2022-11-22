@@ -7,7 +7,7 @@ SUBDIRS=$(PWD) modules
 
 clean:
 	make -C $(KERNEL_DIR) \
-	ARCH=arm64 CROSS_COMPILE/home/boris/l4t-gcc/gcc-linaro-7.3.1-2018.05-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu- \
+	ARCH=arm64 CROSS_COMPILE=/home/boris/l4t-gcc/gcc-linaro-7.3.1-2018.05-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu- \
 SUBDIRS=$(PWD) clean
 
 deploy:
